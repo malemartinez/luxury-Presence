@@ -1,0 +1,79 @@
+.nav-bar-container {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #162d54;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 70px;
+  transition: ease 0.3s left;
+}
+.nav-bar-container li {
+  display: block;
+  text-align: center;
+  padding: 20px 0px;
+}
+.nav-bar-container li a {
+  font-size: 2.5rem;
+  color: white
+}
+.nav-bar-container li a:hover {
+  border-bottom: 2px solid #cda274;
+}
+
+.activate {
+  left: 0;
+}
+.menu-btn {
+  font-size: 2.4rem;
+  color: white;
+  display: block;
+  text-align: right;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.menu-btn i.activate::before {
+  content: "\f00d";
+  color: #FFCC7C;
+}
+
+.hero-title{
+  font-size: 3rem;
+}
+.hero-subtitle{
+  font-size: 1.8rem;
+}
+.button-hero{
+  font-size:1.6rem ;
+}
+.title-service-container p{
+  font-size: 2.2rem;
+}
+
+
+
+/* footer */
+.info-section{
+  flex-direction: column;
+  
+}
+.info{
+  justify-content: flex-start;
+}
+.info:first-child{
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 370px){
+  .nav-container{
+    padding: 30px;
+  }
+  .logo {
+    font-size: 2rem;
+}
+  .footer-container{
+    font-size: 1.2rem;
+  }
+}
